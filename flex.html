@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+         .container , .container2{
+            background-color: aqua;
+            width: 80em;
+            height: 700px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* justify-content: space-around; */
+            justify-content: space-evenly;
+            /* flex-direction: row-reverse; */
+         }
+         .box ,.box1{
+            /* background-color: rgb(4, 246, 169); */
+            background-image: url(/CHA.jpg);
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgb(255, 255, 255);
+            text-align: center;
+            color: blue;
+            background-size: contain;
+            background-repeat: no-repeat;
+         }
+         .container2{
+            flex-direction: row;
+            justify-content:space-between;
+         }
+         .box1{
+            order: 1;
+            flex-grow: 3;
+            flex-shrink: 4;
+         }
+         .box2{
+            order: 2;
+            flex-basis: 50px;
+         }
+         img{
+            width: 50%;
+            height: %;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class=" box box1">box 1</div>
+        <div class=" box box2">box 2</div>
+        <div class=" box box3">box 3</div>
+        <div class=" box box4">box 4</div>
+        <div class=" box box5">box 5</div>
+    </div>
+    <!-- <div class="container2">
+        <div class=" box1 box">box 1</div>
+        <div class=" box1 box2">box 2</div>
+        <div class=" box1 box3">box 3</div>
+        <div class=" box1 box4">box 4</div>
+        <div class=" box1 box5">box 5</div>
+    </div> -->
+</body>
+</html>
